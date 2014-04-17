@@ -1,4 +1,4 @@
-console.log('\'Allo \'Allo!');
+console.log('Death Becomes Her');
 
 function Patient(name, location, age, symptom) {
 	this.name = name;
