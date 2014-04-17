@@ -1,15 +1,14 @@
 console.log('\'Allo \'Allo!');
 
-function Patient(name, location, age, condition) {
+function Patient(name, location, age, symptom) {
 	this.name = name;
 	this.location = location;
 	this.age = age;
-	this.condition = condition;
-	this.appointment = appointment;
+	this.symptom = symptom;
 
-	if (this.appointment = "cancelled") {
+	if (this.symptom = "") {
 			this.condition = "dead";
-		alert(this.name +"died.Game over")
+		alert(this.name +"died.SixFeetUnder")
 
 	}
 
@@ -26,11 +25,11 @@ function Doctor(name, location, specialty) {
 
 }
 
-function Insurance(name, specialty) {
+function Disease(name, symptomone, symptomtwo) {
 	this.name = name;
-	this.location = location;
-	this.specialty = specialty;
-	this.addAppointment = function(patient)
+	this.symptomone = symptomone;
+	this.symptomtwo = symptomtwo;
+	this.addsymptom = function(symptom)
 	{
 
 
@@ -43,19 +42,19 @@ function Insurance(name, specialty) {
 
 
 
-Patient.prototype.cancelDoctor = function(){
+Patient.prototype.addSymptom = function(){
 	this.patientdies = true;
 }
 	
 
-var summerPatient = new Patient("summer belk", "charleston", 34, "heart condition");
-var markPatient = new Patient("mark mattison", "mtpleasant", 37, "allergies");
-var sharronPatient = new Patient("sharron osborne", "columbia", 50, "ibs");
+var summerPatient = new Patient("summer belk", "charleston", 34, "acid trip");
+var markPatient = new Patient("mark mattison", "mtpleasant", 37, "walking dead");
+var sharronPatient = new Patient("sharron osborne", "columbia", 50, "blood thirsty");
 
 
-var brownDoctor = new Doctor("Dr Brown", "columbia", "gastrointerology");
-var smithDoctor = new Doctor("Dr Smith", "charleston", "cardiac surgeon");
-var jonesDoctor = new Doctor("Dr Jones", "mtpleasant", " allergist");
+var brownDoctor = new Doctor("Dr Brown", "columbia", "detox");
+var smithDoctor = new Doctor("Dr Smith", "charleston", "");
+var jonesDoctor = new Doctor("Dr Jones", "mtpleasant", "victum supplier");
 
 
 var corpseDisease = new Diease("Walking Corpse Syndrome", "body parts missing","I'm Dead!");
