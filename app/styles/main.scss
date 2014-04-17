@@ -24,10 +24,31 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  color: lavendar;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-base);
+  @include user-select(none);
+
+  &,
+  &:active,
+  &.active {
+    &:focus {
+      @include tab-focus();
+    }
+  }
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid <a class="btn btn-success" href="">CLICK ME</a>;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
@@ -90,4 +111,4 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
-}
+}};

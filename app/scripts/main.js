@@ -31,6 +31,10 @@ function Insurance(name, specialty) {
 	this.location = location;
 	this.specialty = specialty;
 	this.addAppointment = function(patient)
+	{
+
+
+	}
 
 	// if (this.life <= 0) {
 	// 		this.ability = "none";
@@ -58,7 +62,7 @@ var corpseDisease = new Diease("Walking Corpse Syndrome", "body parts missing","
 var porphysiaDisease = new Diease("Vampire Disease", "Fangs", "Give Me Blood!");
 var aliceDisease = new Diease("Alice in Wonderland Syndrome", "ladybug as big as a house", "Dog as small as a mouse");
 
-}
+
 };
 
 // Phone.prototype.dropPhone = function(){
