@@ -1,88 +1,69 @@
-console.log(Death Becomes Her);
+console.log('Death Becomes Her');
 
-	function Patient(name,health, disease){
+	function Patient(name,health, disease) {
 	this.name = name;
 	this.health = 100;  
 	this.disease = disease; 
 	this.changeHealth = function(newHealth){
 		this.health = newHealth;
-	};
-	// if (this.disease = "corpseDisease") {
-	// 		this.condition = "dead";
-	// 	alert(this.name +"died.SixFeetUnder")
-	// 	}
-
-// 	Disease.prototype.hasdisease = function(){
-// 	this.dead = true;
-
-// };
-
-// }
-
-// var Patient = function(name, location, age, condition)
-
-// function Doctor(name, specialty) {
-// 	this.name = name;
-// 	// this.location = location;
-// 	this.specialty = specialty;
-// }
-
-
-// function Disease(name) {
-// 	this.name = name;
-// 	// this.symptom = symptom;
-// 	if(this.name == "") {
-// 		patient.dead()
-// 	}
-// }
-// Disease.prototype.Fever
-
-// 	{
-
-
-// 	}
-
-	// if (this.life <= 0) {
-	// 		this.ability = "none";
-	// 	alert(this.name +"died.Game over")
-	// }
-
-
-
-// Patient.prototype.add = function(){
-// 	this.patientdies = true;
-// }
-
-// var summer = new Patient("Summer", "100", "");
-// alert(summer.name); //displays "Summer"
-// alert(summer.disease); //displays "Acid Trip"
-// alert(summer.toString); //displays "My name is Summer and I feel like I am "on an Acid Trip".
-
+	}};
 	
 
-// // var summerPatient = new Patient("summer belk", "charleston", "acid trip");
-// // var markPatient = new Patient("mark mattison", "mtpleasant", "walking dead");
-// // var sharronPatient = new Patient("sharron osborne", "columbia", "blood thirsty");
+	// $(this.disease = ".disease").click(function(e) {
+	// 	e.preventDefault();
+	// 	summer.disease(patient);
+	// 	alert(this.name +"died.SixFeetUnder");
+	// 	});
+
+	Disease.prototype.hasdisease = function(){
+		this.dead = true;
+
+    };
+
+var Patient = function(name, condition) {
+}
 
 
-// // var brownDoctor = new Doctor("Dr Brown", "columbia", "detox");
-// // var smithDoctor = new Doctor("Dr Smith", "charleston", "");
-// // var jonesDoctor = new Doctor("Dr Jones", "mtpleasant", "victum supplier");
+function Doctor(name, specialty) {
+	this.name = name;
+	this.specialty = specialty;
+	this.health = + 50;
+}
 
 
-// // var corpseDisease = new Diease("Walking Corpse Syndrome", "body parts missing","I'm Dead!");
-// // var porphysiaDisease = new Diease("Vampire Disease", "Fangs", "Give Me Blood!");
-// // var aliceDisease = new Diease("Alice in Wonderland Syndrome", "ladybug as big as a house", "Dog as small as a mouse");
+function Disease(name, damage) {
+	this.name = name;
+	this.damage = damage;
+	// this.symptom = symptom;
+	this.kill = function()  {
 
-// // var patients = ["Summer Mattison","Mark Mattison","Sharron Osborne"];
-// // var diseases = ["Walking Corpse Syndrome","Vampire Diease", "Alice in Wonderland Syndrome"];
-// // var doctors = ["Dr Brown","Dr Smith", "Dr Jones"];
+		if(this.name == "") {
+		patient.dead();
+		}
+	}
+}
 
-// document.write("<p>The first disease is <stong>");
-// document.write(doctors[0] + '</strong></p>');
+Disease.prototype.Fever = function(){
+	if (this.life <= 0) {
+			this.ability = "none";
+		alert(this.name +"died.Game over")
+	}
+
+}
 
 
-// };
+Patient.prototype.add = function(){
+	this.patientdies = true;
+}
+
+
+
+
+
+
+
+
+// });
 
 // Phone.prototype.dropPhone = function(){
 // 	this.broken = true;

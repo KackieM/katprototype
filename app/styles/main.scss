@@ -6,8 +6,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 .browsehappy {
     margin: 0.2em 0;
-    background: black;
-    color: white;
+    background: #ccc;
+    color: #000;
     padding: 0.2em 0;
 }
 
@@ -28,10 +28,11 @@ p {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
-footer {
+.footer {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .btn {
   display: inline-block;
   margin-bottom: 0; // For input.btn
@@ -53,6 +54,7 @@ footer {
       @include tab-focus();
     }
   }
+}
 
 /* Custom page header */
 .header {
@@ -81,13 +83,13 @@ footer {
     margin: 30px 0;
 }
 
-button{
-  button-size: 50px;
-  color: 
-  background-color: black;
-  center
+// // button {
+// //   button-size: 50px;
+// //   color: 
+// //   background-color: black;
+// //   center
 
-}
+// }
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -131,5 +133,4 @@ button{
         border-bottom: 0;
     }
 
-    .glyphicon-cutlery                { &:before { content: "\e179"; } }
-}};
+}
