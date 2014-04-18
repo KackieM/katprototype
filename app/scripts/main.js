@@ -1,39 +1,46 @@
-console.log('Death Becomes Her');
+console.log(Death Becomes Her);
 
-function Patient(name, location, age, symptom) {
+	function Patient(name,health, disease){
 	this.name = name;
-	this.location = location;
-	this.age = age;
-	this.symptom = symptom;
+	this.health = 100;  
+	this.disease = disease; 
+	this.changeHealth = function(newHealth){
+		this.health = newHealth;
+	};
+	// if (this.disease = "corpseDisease") {
+	// 		this.condition = "dead";
+	// 	alert(this.name +"died.SixFeetUnder")
+	// 	}
 
-	if (this.symptom = "") {
-			this.condition = "dead";
-		alert(this.name +"died.SixFeetUnder")
+// 	Disease.prototype.hasdisease = function(){
+// 	this.dead = true;
 
-	}
+// };
 
-}
+// }
 
 // var Patient = function(name, location, age, condition)
 
-function Doctor(name, location, specialty) {
-	this.name = name;
-	this.location = location;
-	this.specialty = specialty;
+// function Doctor(name, specialty) {
+// 	this.name = name;
+// 	// this.location = location;
+// 	this.specialty = specialty;
+// }
 
 
+// function Disease(name) {
+// 	this.name = name;
+// 	// this.symptom = symptom;
+// 	if(this.name == "") {
+// 		patient.dead()
+// 	}
+// }
+// Disease.prototype.Fever
 
-}
-
-function Disease(name, symptomone, symptomtwo) {
-	this.name = name;
-	this.symptomone = symptomone;
-	this.symptomtwo = symptomtwo;
-	this.addsymptom = function(symptom)
-	{
+// 	{
 
 
-	}
+// 	}
 
 	// if (this.life <= 0) {
 	// 		this.ability = "none";
@@ -42,27 +49,40 @@ function Disease(name, symptomone, symptomtwo) {
 
 
 
-Patient.prototype.addSymptom = function(){
-	this.patientdies = true;
-}
+// Patient.prototype.add = function(){
+// 	this.patientdies = true;
+// }
+
+// var summer = new Patient("Summer", "100", "");
+// alert(summer.name); //displays "Summer"
+// alert(summer.disease); //displays "Acid Trip"
+// alert(summer.toString); //displays "My name is Summer and I feel like I am "on an Acid Trip".
+
 	
 
-var summerPatient = new Patient("summer belk", "charleston", 34, "acid trip");
-var markPatient = new Patient("mark mattison", "mtpleasant", 37, "walking dead");
-var sharronPatient = new Patient("sharron osborne", "columbia", 50, "blood thirsty");
+// // var summerPatient = new Patient("summer belk", "charleston", "acid trip");
+// // var markPatient = new Patient("mark mattison", "mtpleasant", "walking dead");
+// // var sharronPatient = new Patient("sharron osborne", "columbia", "blood thirsty");
 
 
-var brownDoctor = new Doctor("Dr Brown", "columbia", "detox");
-var smithDoctor = new Doctor("Dr Smith", "charleston", "");
-var jonesDoctor = new Doctor("Dr Jones", "mtpleasant", "victum supplier");
+// // var brownDoctor = new Doctor("Dr Brown", "columbia", "detox");
+// // var smithDoctor = new Doctor("Dr Smith", "charleston", "");
+// // var jonesDoctor = new Doctor("Dr Jones", "mtpleasant", "victum supplier");
 
 
-var corpseDisease = new Diease("Walking Corpse Syndrome", "body parts missing","I'm Dead!");
-var porphysiaDisease = new Diease("Vampire Disease", "Fangs", "Give Me Blood!");
-var aliceDisease = new Diease("Alice in Wonderland Syndrome", "ladybug as big as a house", "Dog as small as a mouse");
+// // var corpseDisease = new Diease("Walking Corpse Syndrome", "body parts missing","I'm Dead!");
+// // var porphysiaDisease = new Diease("Vampire Disease", "Fangs", "Give Me Blood!");
+// // var aliceDisease = new Diease("Alice in Wonderland Syndrome", "ladybug as big as a house", "Dog as small as a mouse");
+
+// // var patients = ["Summer Mattison","Mark Mattison","Sharron Osborne"];
+// // var diseases = ["Walking Corpse Syndrome","Vampire Diease", "Alice in Wonderland Syndrome"];
+// // var doctors = ["Dr Brown","Dr Smith", "Dr Jones"];
+
+// document.write("<p>The first disease is <stong>");
+// document.write(doctors[0] + '</strong></p>');
 
 
-};
+// };
 
 // Phone.prototype.dropPhone = function(){
 // 	this.broken = true;
